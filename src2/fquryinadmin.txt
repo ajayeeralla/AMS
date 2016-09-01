@@ -1,0 +1,4 @@
+
+
+
+SELECT U.userid AS 'ID', U.username AS 'NAME', U.class AS 'Class', U.usertype AS 'Type', COUNT(A.userid)/2 AS 'Days Attended',(Select count(H.hdate) from Holidays H where H.hdate between '2010-09-20' AND '2010-10-06') as 'Holidays',GetWorkingDays('2010-09-20','2010-10-06') as 'WorkingDays', GetWorkingDays('2010-09-20','2010-10-06') -(Select count(H.hdate) from Holidays H where H.hdate between '2010-09-20' AND '2010-10-06') -COUNT(A.userid)/2 as 'Days Absent' FROM user U LEFT JOIN (SELECT * FROM userattendance WHERE attdate between '2010-09-20' AND '2010-10-06') A ON U.userid=A.userid GROUP BY U.userid;

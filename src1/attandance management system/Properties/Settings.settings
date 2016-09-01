@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="attandance_management_system.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DateFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">yyyy-MM-dd</Value>
+    </Setting>
+    <Setting Name="MySqlPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mysql</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
